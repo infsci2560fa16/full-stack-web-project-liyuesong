@@ -37,7 +37,7 @@ $(function() {
     var infoHtml;
     $("#submitDetail").click(function() {
         $("#addPhoto-title").html(titleHtml);
-        infoHtml = "<div class='post-preview'><a href='post.html'><h3 class='post-title'>" + place + "</h3>";
+        infoHtml = "<div class='post-preview'><a href='#'><h3 class='post-title'>" + place + "</h3>";
         infoHtml += "<h4 class='post-subtitle'>" + stories + "</h4></a>";
         infoHtml += "<p class='post-meta'>Posted by <a href='#'>user</a> on " + date + "</p></div>";
         $("#info-adding").html(infoHtml);
