@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TripMark - Destination - Details</title>
+    <link href="../stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="../stylesheets/main.css" rel="stylesheet">
+    <link href="../stylesheets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/jquery/jquery.js"></script>
+    <script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="../index.html">Travel Diary</a>
+                <a href="#side-menu-toggle" id="side-menu-toggle" class="btn btn-dark btn-lg toggle">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="../index.html"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="signin.html">Sign In</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="destination.html">Destination</a>
+                    </li>
+                    <!--li class="page-scroll">
+                        <a href="destination.html">Make A Travel Plan</a>
+                    </li-->
+                    <li class="page-scroll">
+                        <a href="editNotes.html">Share Travel Stories</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="travelNotes.html">Stories In Time</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <!-- wrapper -->
+    <div id="detail-wrapper">
+        <!-- side bar wrapper -->
+        <div id="detail-sidebar-wrapper">
+            <ul class="detail-sidebar-nav">
+                <li class="detail-sidebar-brand">
+                    <a href="#">
+                        Destination1
+                    </a>
+                </li>
+                <li>
+                    <a href="#destination-stories">Travel Stories</a>
+                </li>
+                <li>
+                    <a href="#best-of-the-best">Best of the best</a>
+                </li>
+                <li>
+                    <a href="#getting-around">Getting Around</a>
+                </li>
+                <li>
+                    <a href="entertainment-and-activities">Entertainment &amp; Activities</a>
+                </li>
+                <li>
+                    <a href="questions-and-answers">Questions &amp; Answers</a>
+                </li>
+            </ul>
+        </div>
+        <!-- page content -->
+        <div id="detail-page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <header id="destinationDetail-top" class="destinationDetail-header">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h3 class="page-header">
+                                Destination1
+                                <small>destination details</small>
+                            </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                </div>
+                <!-- destination-stories -->
+                <div class="row" id="destination-stories">
+                    <div class="row">
+                        <div class="col-lg-12 col-lg-offset-1">
+                            <h4>Travel Stories</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1 col-lg-offset-1">
+                            <hr class="small-left">
+                        </div>
+                    </div>
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img class="img-responsive" src="../img/stories/story1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="post-preview">
+                                    <a href="post.html">
+                                        <h3 class="post-title">
+                            Travel Note 1
+                        </h3>
+                                        <h4 class="post-subtitle">
+                            Stroy of somebody...
+                        </h4>
+                                    </a>
+                                    <p class="post-meta">Posted by <a href="#">Somebody1</a> on November 07, 2016</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img class="img-responsive" src="../img/stories/story2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="post-preview">
+                                    <a href="post.html">
+                                        <h3 class="post-title">
+                            Travel Note 2
+                        </h3>
+                                    </a>
+                                    <p class="post-meta">Posted by <a href="#">Somebody2</a> on November 07, 2016</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img class="img-responsive" src="../img/stories/story3.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="post-preview">
+                                    <a href="post.html">
+                                        <h3 class="post-title">
+                            Travel Note 3
+                        </h3>
+                                        <h4 class="post-subtitle">
+                            Story in destination 1... By...
+                        </h4>
+                                    </a>
+                                    <p class="post-meta">Posted by <a href="#">Somebody3</a> on November 07, 2016</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- Pager -->
+                        <ul class="pager">
+                            <li class="next">
+                                <a href="#">Older Posts &rarr;</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Best of the best -->
+                <div class="row" id="best-of-the-best">
+                    <div class="row">
+                        <div class="col-lg-12 col-lg-offset-1">
+                            <h4>Best of the best</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1 col-lg-offset-1">
+                            <hr class="small-left">
+                        </div>
+                    </div>
+                    <!--div class="col-lg-12">
+                    <div class="row"-->
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <!--section>
+                            <div class="container"-->
+                        <div class="row">
+                            <div class="col-sm-2 best-item">
+                                <a href="#sightseeing" class="best-link">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            Sightseeing
+                                        </div>
+                                    </div>
+                                    <img src="../img/best-of-best/sightseeing/1.jpg" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-2 best-item">
+                                <a href="#parks-and-nature" class="best-link">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            Parks &amp; Nature
+                                        </div>
+                                    </div>
+                                    <img src="../img/best-of-best/ParksAndNature/1.jpg" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-2 best-item">
+                                <a href="#food-scene" class="best-link">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            Food Scene
+                                        </div>
+                                    </div>
+                                    <img src="../img/best-of-best/FoodScene/1.jpg" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-2 best-item">
+                                <a href="#drinks-and-nightlife" class="best-link">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            Drinks &amp; Nightlife
+                                        </div>
+                                    </div>
+                                    <img src="../img/best-of-best/DrinksAndNightlife/1.jpg" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-2 best-item">
+                                <a href="#arts-and-culture" class="best-link">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            Arts &amp; Culture
+                                        </div>
+                                    </div>
+                                    <img src="../img/best-of-best/ArtsAndCulture/1.jpg" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                            <!--div class="col-sm-2 best-item">
+                                        <a href="" class="best-link">
+                                            <div class="caption">
+                                                <div class="caption-content">
+                                                    Shopping
+                                                </div>
+                                            </div>
+                                            <img src="../img/best-of-best/Shopping/1.jpg" class="img-responsive" alt="">
+                                        </a>
+                                    </div-->
+                        </div>
+                        <!--/div>
+                        </section-->
+                        <hr>
+                        <section id="sightseeing" class="sightseeing">
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <h4>Sightseeing in Destination 1</h4>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="col-lg-10">
+                                    <div class="row">
+                                        <div class="post-preview">
+                                            <a href="">
+                                                <h4 class="post-title">
+                                                #1
+                                            </h4>
+                                                <h5 class="post-subtitle">
+                                                Sightseeing No.1
+                                            </h5>
+                                            </a>
+                                            <p class="post-meta">Introduction and evaluation of sightseeing No.1...</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="post-preview">
+                                            <a href="">
+                                                <h4 class="post-title">
+                                                #2
+                                            </h4>
+                                                <h5 class="post-subtitle">
+                                                sightseeing No.2
+                                            </h5>
+                                            </a>
+                                            <p class="post-meta">Introduction and evaluation of sightseeing No.2...</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="post-preview">
+                                            <a href="">
+                                                <h4 class="post-title">
+                                                #3
+                                            </h4>
+                                                <h5 class="post-subtitle">
+                                                sightseeing No.3
+                                            </h5>
+                                            </a>
+                                            <p class="post-meta">Introduction and evaluation of sightseeing No.3...</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                        </section>
+                        <br>
+                        <section id="parks-and-nature" class="parks-and-nature">
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <h4>Parks &amp; Nature in Destination 1</h4>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="col-lg-10">
+                                    <div class="row">
+                                        <div class="post-preview">
+                                            <a href="">
+                                                <h4 class="post-title">
+                                                #1
+                                            </h4>
+                                                <h5 class="post-subtitle">
+                                                Parks &amp; Nature No.1
+                                            </h5>
+                                            </a>
+                                            <p class="post-meta">Introduction and evaluation of Parks and Nature No.1...</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="post-preview">
+                                            <a href="">
+                                                <h4 class="post-title">
+                                                #2
+                                            </h4>
+                                                <h5 class="post-subtitle">
+                                                Parks &amp; Nature No.2
+                                            </h5>
+                                            </a>
+                                            <p class="post-meta">Introduction and evaluation of Parks and Nature No.2...</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="post-preview">
+                                            <a href="">
+                                                <h4 class="post-title">
+                                                #3
+                                            </h4>
+                                                <h5 class="post-subtitle">
+                                                Parks &amp; Nature No.3
+                                            </h5>
+                                            </a>
+                                            <p class="post-meta">Introduction and evaluation of Parks and Nature No.3...</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                        </section>
+                        <br>
+                        <section id="food-scene" class="food-scene">
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <h4>Food Scene in Destination 1</h4>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="col-lg-10">
+                                    <div class="row">
+                                        <div class="post-preview">
+                                            <a href="">
+                                                <h4 class="post-title">
+                                                #1
+                                            </h4>
+                                                <h5 class="post-subtitle">
+                                                Food Scene No.1
+                                            </h5>
+                                            </a>
+                                            <p class="post-meta">Introduction and evaluation of food scene No.1...</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="post-preview">
+                                            <a href="">
+                                                <h4 class="post-title">
+                                                #2
+                                            </h4>
+                                                <h5 class="post-subtitle">
+                                                Food Scene No.2
+                                            </h5>
+                                            </a>
+                                            <p class="post-meta">Introduction and evaluation of food scene No.2...</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="post-preview">
+                                            <a href="">
+                                                <h4 class="post-title">
+                                                #3
+                                            </h4>
+                                                <h5 class="post-subtitle">
+                                                Food Scene No.3
+                                            </h5>
+                                            </a>
+                                            <p class="post-meta">Introduction and evaluation of food scene No.3...</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                        </section>
+                        <br>
+                        <section id="drinks-and-nightlife" class="drinks-and-nightlife">
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <h4>Drinks &amp; Nightlife in Destination 1</h4>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="col-lg-10">
+                                    <div class="row">
+                                        <div class="post-preview">
+                                            <a href="">
+                                                <h4 class="post-title">
+                                                #1
+                                            </h4>
+                                                <h5 class="post-subtitle">
+                                                Drinks &amp; Nightlife No.1
+                                            </h5>
+                                            </a>
+                                            <p class="post-meta">Introduction and evaluation of drinks and nightlife No.1...</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="post-preview">
+                                            <a href="">
+                                                <h4 class="post-title">
+                                                #2
+                                            </h4>
+                                                <h5 class="post-subtitle">
+                                                Drinks &amp; Nightlife No.2
+                                            </h5>
+                                            </a>
+                                            <p class="post-meta">Introduction and evaluation of drinks and nightlife No.2...</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="post-preview">
+                                            <a href="">
+                                                <h4 class="post-title">
+                                                #3
+                                            </h4>
+                                                <h5 class="post-subtitle">
+                                                Drinks &amp; Nightlife No.3
+                                            </h5>
+                                            </a>
+                                            <p class="post-meta">Introduction and evaluation of drinks and nightlife No.3...</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                        </section>
+                        <br>
+                        <section id="arts-and-culture" class="arts-and-culture">
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <h4>Arts &amp; Culture in Destination 1</h4>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="col-lg-10">
+                                    <div class="row">
+                                        <div class="post-preview">
+                                            <a href="">
+                                                <h4 class="post-title">
+                                                #1
+                                            </h4>
+                                                <h5 class="post-subtitle">
+                                                Arts &amp; Culture No.1
+                                            </h5>
+                                            </a>
+                                            <p class="post-meta">Introduction and evaluation of arts and culture No.1...</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="post-preview">
+                                            <a href="">
+                                                <h4 class="post-title">
+                                                #2
+                                            </h4>
+                                                <h5 class="post-subtitle">
+                                                Arts &amp; Culture No.2
+                                            </h5>
+                                            </a>
+                                            <p class="post-meta">Introduction and evaluation of arts and culture No.2...</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="post-preview">
+                                            <a href="">
+                                                <h4 class="post-title">
+                                                #3
+                                            </h4>
+                                                <h5 class="post-subtitle">
+                                                Arts &amp; Culture No.3
+                                            </h5>
+                                            </a>
+                                            <p class="post-meta">Introduction and evaluation of arts and culture No.3...</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!--/div>
+                </div-->
+                <!-- footer -->
+                <br>
+                <hr>
+                <div class="row">
+                    <footer>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <p>Copyright &copy; yul131@pitt.edu 2016</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    $("#side-menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#detail-wrapper").toggleClass("toggled");
+    });
+    </script>
+</body>
+
+</html>

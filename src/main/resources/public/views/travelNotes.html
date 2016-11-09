@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TripMark - Destination - TravelNotes</title>
+    <link href="../stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="../stylesheets/main.css" rel="stylesheet">
+    <link href="../stylesheets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/jquery/jquery.js"></script>
+    <script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="../index.html">Travel Diary</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="../index.html"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="signin.html">Sign In</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="destination.html">Destination</a>
+                    </li>
+                    <!--li class="page-scroll">
+                        <a href="destination.html">Make A Travel Plan</a>
+                    </li-->
+                    <li class="page-scroll">
+                        <a href="editNotes.html">Share Travel Stories</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <header id="destinationDetail-top" class="destinationDetail-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="page-header">
+                    	Destination1
+                    	<small>destination details</small>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- destination-stories -->
+    <div class="row" id="destination-stories">
+        <div class="row">
+            <div class="col-lg-12 col-lg-offset-1">
+                <h4>Travel Stories</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1 col-lg-offset-1">
+                <hr class="small-left">
+            </div>
+        </div>
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#">
+                        <img class="img-responsive" src="../img/stories/story1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-md-7">
+                    <div class="post-preview">
+                        <a href="post.html">
+                            <h3 class="post-title">
+                            Travel Note 1
+                        </h3>
+                            <h4 class="post-subtitle">
+                            Stroy of somebody...
+                        </h4>
+                        </a>
+                        <p class="post-meta">Posted by <a href="#">Somebody1</a> on November 07, 2016</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#">
+                        <img class="img-responsive" src="../img/stories/story2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-md-7">
+                    <div class="post-preview">
+                        <a href="post.html">
+                            <h3 class="post-title">
+                            Travel Note 2
+                        </h3>
+                        </a>
+                        <p class="post-meta">Posted by <a href="#">Somebody2</a> on November 07, 2016</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#">
+                        <img class="img-responsive" src="../img/stories/story3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-md-7">
+                    <div class="post-preview">
+                        <a href="post.html">
+                            <h3 class="post-title">
+                            Travel Note 3
+                        </h3>
+                            <h4 class="post-subtitle">
+                            Story in destination 1... By...
+                        </h4>
+                        </a>
+                        <p class="post-meta">Posted by <a href="#">Somebody3</a> on November 07, 2016</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- Pager -->
+            <ul class="pager">
+                <li class="next">
+                    <a href="#">Older Posts &rarr;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- footer -->
+    <br>
+    <hr>
+    <div class="row">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>Copyright &copy; yul131@pitt.edu 2016</p>
+                    </div>
+                </div>
+            </div>
+            <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+        </footer>
+    </div>
+    <script type="text/javascript">
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    </script>
+</body>
+
+</html>

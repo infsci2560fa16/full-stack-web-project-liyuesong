@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TripMark - EditNotes</title>
+    <link href="../stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="../stylesheets/main.css" rel="stylesheet">
+    <link href="../stylesheets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- calendar -->
+    <link rel="stylesheet" href="../stylesheets/calendar/pikaday.css">
+    <!--link rel="stylesheet" href="../stylesheets/calendar/site.css"-->
+    <!-- script -->
+    <script type="text/javascript" src="../js/jquery/jquery.js"></script>
+    <script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
+    <!-- calendar -->
+    <script src="../js/pikaday.js"></script>
+    <!-- script of edit page -->
+    <script type="text/javascript" src="../js/editNotes.js"></script>
+</head>
+
+<body>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="../index.html">Travel Diary</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="../index.html"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="signin.html">Sign In</a>
+                    </li>
+                    <!--li class="page-scroll">
+                        <a href="destination.html">Destination</a>
+                    </li-->
+                    <li class="page-scroll">
+                        <a href="destination.html">Make A Travel Plan</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="travelNotes.html">Stories In Time</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <!--header id="editNotes-top" class="editNotes-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="page-header">
+                        Edit Your Stories
+                        
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </header-->
+    <section id="editByPlaces">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Edit your stories</h3>
+                    <hr class="small">
+                </div>
+            </div>
+            <!--div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 class="section-heading">Edit by places</h3>
+                    <hr class="small">
+                </div>
+            </div>
+            <br-->
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <form name="addTitle" id="js-upload-form" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <input type="text" class="form-control" placeholder="Title" id="title" required data-validation-required-message="Please enter Note's title.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="form-group col-lg-12 text-center">
+                                <a href="#editDetails" class="btn btn-circle page-scroll" id="submitTitle">
+                                    <i class="fa fa-angle-double-down animated"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section id="editDetails">
+        <div class="container">
+            <div class="row" id="detail-title">
+                <div class="col-lg-12 text-center">
+                    <h3>Edit your stories</h3>
+                    <hr class="small">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <form name="editNotes" id="editNotes" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label for="datepicker">Date</label>
+                                <input type="text" class="form-control" placeholder="Date" id="datepicker" required data-validation-required-message="Please enter date of stories.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Place</label>
+                                <input type="email" class="form-control" placeholder="Place" id="place" required data-validation-required-message="Please enter place.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Stories</label>
+                                <textarea rows="5" class="form-control" placeholder="add stories..." id="stories" required data-validation-required-message="Add stories"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="form-group col-lg-12 text-center">
+                                <a href="#addPhoto" class="btn btn-circle page-scroll" id="submitDetail">
+                                    <i class="fa fa-angle-double-down animated"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-default">Send</button>
+                            </div>
+                        </div-->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- add photo -->
+    <section>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3>Edit your stories</h3>
+                <hr class="small">
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row" id="addPhoto">
+                <div class="row" id="addPhoto-title">
+                </div>
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="#">
+                                <img class="img-responsive" src="../img/stories/story1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-7" id="info-adding">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="form-group col-lg-12 text-center">
+                            <a href="timeline.html" class="btn btn-circle page-scroll" id="submit">
+                                <i class="fa fa-angle-double-down animated"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+    // var title;
+    // $("#title").change(function() {
+    //     title = $(this).val();
+    // });
+    // var titleHtml;
+    // $("#submitTitle").click(function() {
+    //     titleHtml = "<div class='col-lg-12 text-center'></div>" + "<h3 style='text-align: center'>" + title + "</h3><hr class='small'>";
+    //     $("#detail-title").html(titleHtml);
+    // })
+    </script>
+    <!--footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy; yul131@pitt.edu 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer-->
+    <!-- map -->
+</body>
+
+</html>
