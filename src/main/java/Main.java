@@ -58,49 +58,49 @@ public class Main {
   //     }
   // });
 
-    get("/db", (req, res) -> {
-      Connection connection = null;
-      Map<String, Object> attributes = new HashMap<>();
-      try {
-        connection = DatabaseUrl.extract().getConnection();
+    // get("/db", (req, res) -> {
+    //   Connection connection = null;
+    //   Map<String, Object> attributes = new HashMap<>();
+    //   try {
+    //     connection = DatabaseUrl.extract().getConnection();
 
-        Statement stmt = connection.createStatement();
-        stmt.executeUpdate("CREATE TABLE IF NOT EXISTS ticks (tick timestamp)");
-        stmt.executeUpdate("INSERT INTO ticks VALUES (now())");
-        ResultSet rs = stmt.executeQuery("SELECT tick FROM ticks");
+    //     Statement stmt = connection.createStatement();
+    //     stmt.executeUpdate("CREATE TABLE IF NOT EXISTS ticks (tick timestamp)");
+    //     stmt.executeUpdate("INSERT INTO ticks VALUES (now())");
+    //     ResultSet rs = stmt.executeQuery("SELECT tick FROM ticks");
 
-        ArrayList<String> output = new ArrayList<String>();
-        while (rs.next()) {
-          output.add( "Read from DB: " + rs.getTimestamp("tick"));
-        }
+    //     ArrayList<String> output = new ArrayList<String>();
+    //     while (rs.next()) {
+    //       output.add( "Read from DB: " + rs.getTimestamp("tick"));
+    //     }
 
-        attributes.put("results", output);
-        return new ModelAndView(attributes, "db.ftl");
-      } catch (Exception e) {
-        attributes.put("message", "There was an error: " + e);
-        return new ModelAndView(attributes, "error.ftl");
-      } finally {
-        if (connection != null) try{connection.close();} catch(SQLException e){}
-      }
-    }, new FreeMarkerEngine());
+    //     attributes.put("results", output);
+    //     return new ModelAndView(attributes, "db.ftl");
+    //   } catch (Exception e) {
+    //     attributes.put("message", "There was an error: " + e);
+    //     return new ModelAndView(attributes, "error.ftl");
+    //   } finally {
+    //     if (connection != null) try{connection.close();} catch(SQLException e){}
+    //   }
+    // }, new FreeMarkerEngine());
     
-    UserService userService = new UserService();
+    // UserService userService = new UserService();
     
-    get("/users", (req, res) -> {
-        res.type("application/json");
-        return userService.getAllUsers();
-      }, JsonUtil.json());
+    // get("/users", (req, res) -> {
+    //     res.type("application/json");
+    //     return userService.getAllUsers();
+    //   }, JsonUtil.json());
     
-    get("/users/:id", (req, res) -> {
-      res.type("application/json");
-        String id = req.params(":id");
-        User user = userService.getUser(id);
-        if (user != null) {
-          return user;
-        }
-        res.status(400);
-        return new ResponseError("No user with id '%s' found", id);
-      }, JsonUtil.json());
+    // get("/users/:id", (req, res) -> {
+    //   res.type("application/json");
+    //     String id = req.params(":id");
+    //     User user = userService.getUser(id);
+    //     if (user != null) {
+    //       return user;
+    //     }
+    //     res.status(400);
+    //     return new ResponseError("No user with id '%s' found", id);
+    //   }, JsonUtil.json());
     
     // exception(IllegalArgumentException.class, (e, req, res) -> {
     //     res.status(400);
