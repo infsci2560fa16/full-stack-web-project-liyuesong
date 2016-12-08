@@ -8,5 +8,5 @@ $("#but-signin").on("click", function() {
     	if(data.hasOwnProperty("status")) {
     		window.location = '/index';
     	}
-    })
-})
+    });
+});
