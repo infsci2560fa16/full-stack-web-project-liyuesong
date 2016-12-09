@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>TripMark - SignIn</title>
+    <title>TripMark - SignUp</title>
     <link href="../stylesheets/bootstrap.min.css" rel="stylesheet">
     <link href="../stylesheets/main.css" rel="stylesheet">
     <link href="../stylesheets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -45,27 +45,29 @@
         </div>
     </nav>
     <br>
-    <section class="signin" id="signin">
+    <section class="signup" id="signup">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Sign In</h2>
+                    <h2>Sign Up</h2>
                     <hr class="small">
                 </div>
             </div>
             <div class="row">
-                <form name="signInMessage" id="signInForm" class="form-signin" novalidate>
-                    <label for="inputEmail" class="sr-only">Email Address</label>
-                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                    <label for="inputPassword" class="sr-only">Password</label>
-                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <form name="signUpMessage" id="signUpForm" class="form-signup" novalidate>
+                    <label for="signup-inputEmail" class="sr-only">Email Address</label>
+                    <input type="email" id="signup-inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                    <label for="signup-inputUserName" class="sr-only">User Name</label>
+                    <input type="text" id="signup-inputUserName" class="form-control" placeholder="User Name" required>
+                    <label for="signup-inputPassword" class="sr-only">Password</label>
+                    <input type="password" id="signup-inputPassword" class="form-control" placeholder="Password" required>
                     <br>
-                    <button class="btn btn-lg btn-primary btn-block" type="button" id="but-signin" onclick="signin()">Submit</button>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" id="but-signup" onclick="signup()">Submit</button>
                 </form>
                 <br>
                 <div class="col-lg-12 text-center">
-                    <label>Do not have account?</label>
-                    <a id="link-to-signup" href="signup.html">sign up</a>
+                    <label>Already have account?</label>
+                    <a id="link-to-signin" href="signin.html">sign in</a>
                 </div>
             </div>
         </div>
@@ -79,7 +81,6 @@
             </div>
         </div>
     </footer-->
-    
 </body>
 
 </html>

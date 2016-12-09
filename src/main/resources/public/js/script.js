@@ -1,12 +1,25 @@
 /* main js file */
 
-// sign in
-$("#but-signin").on("click", function() {
-    var userAccount = $("inputEmail").val(),
-        password = $("inputPassword").val();
-    $.getJSON("/login", function(data) {
-    	if(data.hasOwnProperty("status")) {
-    		window.location = '/index';
-    	}
+function signin() {
+    var email = $("#inputEmail").val(),
+        password = $("#inputPassword").val();
+    console.log(email, password);
+    $.getJSON("/signin", function(data) {
+        console.log(data);
+        // if (data.hasOwnProperty("status")) {
+        window.location = '/index';
+        // }
     });
-});
+}
+
+function signup() {
+    var email = $("#inputEmail").val(),
+        password = $("#inputPassword").val(),
+        name = $("#signup-inputUserName").val();
+    $.getJSON("/signup", function(data) {
+        console.log(data);
+        // if (data.hasOwnProperty("status")) {
+        window.location = '/index';
+        // }
+    });
+}

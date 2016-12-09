@@ -209,7 +209,7 @@ footer {
 }
 
 
-/*Sign In Page*/
+/*Sign In and Sign Up Page*/
 
 .navbar-brand {
     color: white !important;
@@ -302,6 +302,13 @@ form {
     padding: 100px 0;
 }
 
+.form-signup {
+    max-width: 330px;
+}
+
+.signup {
+    padding: 100px 0;
+}
 
 /* Destination Page */
 
