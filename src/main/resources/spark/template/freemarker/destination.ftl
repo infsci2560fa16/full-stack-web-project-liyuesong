@@ -459,7 +459,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-4 destination-item">
-                    <a href="destinationDetails.html" class="destination-link">
+                    <a href="views/destinationDetails.html" class="destination-link">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -469,7 +469,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 destination-item">
-                    <a href="destinationDetails.html" class="destination-link">
+                    <a href="views/destinationDetails.html" class="destination-link">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -479,7 +479,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 destination-item">
-                    <a href="destinationDetails.html" class="destination-link">
+                    <a href="views/destinationDetails.html" class="destination-link">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -489,7 +489,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 destination-item">
-                    <a href="destinationDetails.html" class="destination-link">
+                    <a href="views/destinationDetails.html" class="destination-link">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -499,7 +499,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 destination-item">
-                    <a href="destinationDetails.html" class="destination-link">
+                    <a href="views/destinationDetails.html" class="destination-link">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -509,7 +509,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 destination-item">
-                    <a href="destinationDetails.html" class="destination-link">
+                    <a href="views/destinationDetails.html" class="destination-link">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
