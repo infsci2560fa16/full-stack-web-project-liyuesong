@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="../js/jquery/jquery.js"></script>
     <script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="../index.html">Travel Diary</a>
+                <a class="navbar-brand">Travel Diary</a>
                 <a href="#side-menu-toggle" id="side-menu-toggle" class="btn btn-dark btn-lg toggle">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -34,16 +35,16 @@
                         <a href="signin.html">Sign In</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="destination.html">Destination</a>
+                        <a href="destination.html" class="page-scroll-des">Destination</a>
                     </li>
                     <!--li class="page-scroll">
                         <a href="destination.html">Make A Travel Plan</a>
                     </li-->
                     <li class="page-scroll">
-                        <a href="editNotes.html">Share Travel Stories</a>
+                        <a href="editNotes.html" class="page-scroll-share">Share Travel Stories</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="travelNotes.html">Stories In Time</a>
+                        <a href="travelNotes.html" class="page-scroll-stories">Stories In Time</a>
                     </li>
                 </ul>
             </div>
@@ -85,7 +86,7 @@
                         <header id="destinationDetail-top" class="destinationDetail-header">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-lg-12">
+                                    <div class="col-lg-12" id="distination-detail-placeName">
                                         <h3 class="page-header">
                                 Destination1
                                 <small>destination details</small>
@@ -99,7 +100,7 @@
                 <!-- destination-stories -->
                 <div class="row" id="destination-stories">
                     <div class="row">
-                        <div class="col-lg-12 col-lg-offset-1">
+                        <div class="col-lg-12 col-lg-offset-1" id="click-to-load-stories">
                             <h4>Travel Stories</h4>
                         </div>
                     </div>
@@ -108,7 +109,7 @@
                             <hr class="small-left">
                         </div>
                     </div>
-                    <div class="col-lg-10 col-lg-offset-1">
+                    <div class="col-lg-10 col-lg-offset-1" id="destination-stories-notes">
                         <div class="row">
                             <div class="col-md-3">
                                 <a href="#">
@@ -169,7 +170,7 @@
                             </div>
                         </div>
                         <hr>
-                        <!-- Pager -->
+                        
                         <ul class="pager">
                             <li class="next">
                                 <a href="#">Older Posts &rarr;</a>

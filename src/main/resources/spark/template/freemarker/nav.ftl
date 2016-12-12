@@ -1,33 +1,66 @@
-<nav class="navbar navbar-default navbar-static-top navbar-inverse">
-  <div class="container">
-    <ul class="nav navbar-nav">
-      <li class="active">
-        <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
-      </li>
-      <li>
-        <a href="https://devcenter.heroku.com/articles/how-heroku-works"><span class="glyphicon glyphicon-user"></span> How Heroku Works</a>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-info-sign"></span> Getting Started Guides <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-ruby">Getting Started with Ruby on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started with Node on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-php">Getting Started with PHP on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-python">Getting Started with Python on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-java">Getting Started with Java on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-go">Getting Started with Go on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-clojure">Getting Started with Clojure on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-scala">Getting Started with Scala on Heroku</a></li>
-            <li class="divider"></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-heroku-and-connect-without-local-dev">Getting Started on Heroku with Heroku Connect</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-jruby">Getting Started with Ruby on Heroku (Microsoft Windows)</a></li>
-          </ul>
-      </li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="navbar-right">
-        <a href="https://devcenter.heroku.com"><span class="glyphicon glyphicon-book"></span> Heroku Dev Center</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand">Travel Diary</a>
+                <#if text == "Destination">
+                    <a href="#side-menu-toggle" id="side-menu-toggle" class="btn btn-dark btn-lg toggle" style="display: none">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </#if>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="../index.html"></a>
+                    </li>
+                    <li class="page-scroll" id="page-scroll-signin">
+                        <a href="../index.html">Sign Out</a>
+                    </li>
+
+                    <#if text == "Share Travel Stories">
+                        <li class="page-scroll">
+                            <a class="page-scroll-des">Destination</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a class="page-scroll-stories">Stories In Time</a>
+                        </li>
+
+                    <#elseif text == "Destination">
+                        <li class="page-scroll" id="page-scroll-destination" style="display: none">
+                            <a class="page-scroll-des">Destination</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a class="page-scroll-share">Share Travel Stories</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a class="page-scroll-stories">Stories In Time</a>
+                        </li>
+
+                    <#elseif text == "Stories In Time">
+                        <li class="page-scroll">
+                            <a class="page-scroll-des">Destination</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a class="page-scroll-share">Share Travel Stories</a>
+                        </li>
+                    <#else>
+                        <li class="page-scroll" id="page-scroll-signin">
+                            <a href="signin.html">Sign In</a>
+                        </li>
+                        <li class="page-scroll" id="page-scroll-destination" style="display: none">
+                            <a class="page-scroll-des">Destination</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a class="page-scroll-share">Share Travel Stories</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a class="page-scroll-stories">Stories In Time</a>
+                        </li>
+                    </#if>
+                </ul>
+            </div>
+        </div>
+    </nav>

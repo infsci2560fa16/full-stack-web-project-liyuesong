@@ -1,61 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>TripMark - Destination</title>
-    <link href="../stylesheets/bootstrap.min.css" rel="stylesheet">
-    <link href="../stylesheets/main.css" rel="stylesheet">
-    <link href="../stylesheets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="../js/jquery/jquery.js"></script>
-    <script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/script.js"></script>
-</head>
-
-<body>
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand">Travel Diary</a>
-                <a href="#side-menu-toggle" id="side-menu-toggle" class="btn btn-dark btn-lg toggle" style="display: none">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="../index.html"></a>
-                    </li>
-                    <li class="page-scroll" id="page-scroll-signin">
-                        <a href="signin.html">Sign In</a>
-                    </li>
-                    <!--li class="page-scroll">
-                        <a href="destination.html">Make A Travel Plan</a>
-                    </li-->
-                    <!--li class="page-scroll">
-                        <a href="">Travel Notes</a>
-                    </li-->
-                    <li class="page-scroll" id="page-scroll-destination" style="display: none">
-                        <a href="destination.html" class="page-scroll-des">Destination</a>
-                    </li>
-                    <li class="page-scroll">
-                        <!-- <a href="editNotes.html" id="page-scroll-share">Share Travel Stories</a> -->
-                        <a class="page-scroll-share">Share Travel Stories</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a class="page-scroll-stories">Stories In Time</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <br>
-    <!-- wrapper -->
+<!-- wrapper -->
     <div id="detail-wrapper" style="display: none">
         <!-- side bar wrapper -->
         <div id="detail-sidebar-wrapper">
@@ -598,9 +541,9 @@
                         <img src="../img/stories/story1.JPG" class="img-responsive" alt="">
                     </a>
                     <!--div class="row">
-                    	<div class="text-center">
-                    		<p>Stories in place 1</p>
-                    	</div>
+                        <div class="text-center">
+                            <p>Stories in place 1</p>
+                        </div>
                     </div-->
                 </div>
                 <div class="col-sm-3 stories-item">
@@ -636,7 +579,7 @@
             </div>
         </div>
     </section>
- 	<!-- footer -->
+    <!-- footer -->
     <br>
     <hr>
     <footer id="destination-footer">
@@ -687,6 +630,3 @@
         $("#detail-wrapper").toggleClass("toggled");
     });
     </script>
-</body>
-
-</html>

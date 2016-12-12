@@ -21,7 +21,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="../index.html">Travel Diary</a>
+                <a class="navbar-brand">Travel Diary</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -57,8 +57,10 @@
                 <form name="signInMessage" id="signInForm" class="form-signin" novalidate>
                     <label for="inputEmail" class="sr-only">Email Address</label>
                     <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                    <span style="color:#FF6666; display:none" id="inputEmailError">&nbsp; not valid email</span>
                     <label for="inputPassword" class="sr-only">Password</label>
                     <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                    <span style="color:#FF6666; display:none" id="inputPasswordError">&nbsp; not valid password</span>
                     <br>
                     <button class="btn btn-lg btn-primary btn-block" type="button" id="but-signin" onclick="signin()">Submit</button>
                 </form>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
+    <xs:element name="subscription">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="place" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="placeID" type="UUID" minOccurs="1" maxOccurs="1"/>
+                            <xs:element name="placeName" type="xs:string" maxOccurs="1"/>
+                            <xs:element name="placeDetail" type="xs:string" minOccurs="0"/>
+                            <xs:element name="introMessage" type="xs:string" minOccurs="0"/>
+                            <xs:element name="pageView" type="xs:string" default="0" />
+                            <xs:element name="visiterCount" type="xs:string" default="1"/>
+                            <xs:element name="commendSight" type="xs:string" minOccurs="0"/>
+                            <xs:element name="commendHotel" type="xs:string" minOccurs="0"/>
+                            <xs:element name="temperature" type="xs:string" minOccurs="0"/>
+                            <xs:element name="recentComment" type="xs:string" maxOccurs="1"/>
+                            <!-- <xs:element name="stories" type="ArrayList" minOccurs='1'/> -->
+                            <xs:element name="story" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="recentStoryID" type="UUID" minOccurs="1" maxOccurs="1"/>
+                                        <xs:element name="recentStoryTitle" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                                        <xs:element name="recentStoryEditor" type="xs:string" maxOccurs="1"/>
+                                        <xs:element name="recentStoryDate" type="xs:dateTime" maxOccurs="1"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="visitedBy" type="xs:string" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="UUID">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z0-9-]{36}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

@@ -1,6 +1,8 @@
 
 import tripmark.service.UserService;
 import tripmark.User;
+import tripmark.service.PlaceService;
+import tripmark.Place;
 
 import java.sql.*;
 import java.util.HashMap;
@@ -82,6 +84,7 @@ public class Main {
     }, new FreeMarkerEngine());
 
     UserService userService = new UserService();
+    PlaceService placeService = new PlaceService();
     
     // get("/users", (req, res) -> {
     //     res.type("application/json");

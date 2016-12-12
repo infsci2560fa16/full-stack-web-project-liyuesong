@@ -21,7 +21,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="../index.html">Travel Diary</a>
+                <a class="navbar-brand">Travel Diary</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -57,14 +57,23 @@
                 <form name="signUpMessage" id="signUpForm" class="form-signup" novalidate>
                     <label for="signup-inputEmail" class="sr-only">Email Address</label>
                     <input type="email" id="signup-inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                    <span style="color:#FF6666; display:none" id="signup-inputEmailError">&nbsp; not valid email address</span>
                     <label for="signup-inputUserName" class="sr-only">User Name</label>
                     <input type="text" id="signup-inputUserName" class="form-control" placeholder="User Name" required>
-                    <label for="signup-inputPassword" class="sr-only">Password</label>
-                    <input type="password" id="signup-inputPassword" class="form-control" placeholder="Password" required>
+                    <span style="color:#FF6666; display:none" id="userNameError">&nbsp; please input a username</span>
+                    <label for="inputPassword1" class="sr-only">Password</label>
+                    <input type="password" id="inputPassword1" class="form-control" placeholder="Password" required>
+                    <span style="color:#FF6666; display:none" id="signup-inputPasswordError">&nbsp; not valid password</span>
+                    <label for="inputPassword2" class="sr-only">Confirm Password</label>
+                    <input type="password" id="inputPassword2" class="form-control" placeholder="Password" required>
+                    <span style="color:#FF6666; display:none" id="signup-confirmPasswordError">&nbsp; not consistent password</span>
                     <br>
                     <button class="btn btn-lg btn-primary btn-block" type="submit" id="but-signup" onclick="signup()">Submit</button>
                 </form>
                 <br>
+                <div class="col-lg-12 text-center" style="display: none;" id="hasRegistered">
+                    <label>This email has already been registered, please sign in. </label>
+                </div>
                 <div class="col-lg-12 text-center">
                     <label>Already have account?</label>
                     <a id="link-to-signin" href="signin.html">sign in</a>

@@ -10,6 +10,7 @@ public class User {
 	private String email;
 	private String password;
 	private Date date = new Date();
+	private Boolean status; // has not sign in.
 
 	// public UserController(final UserService UserService) {
 	// 	get("/users", new Route() {
@@ -22,6 +23,14 @@ public class User {
 
 	// 	// more routes
 	// }
+	
+	public User(String email, String password, String name, Boolean status) {
+		super();
+		this.email = email;
+		this.password = password;
+		this.name = name;
+		this.status = status;
+	}
 
 	public String getName() {
 		return name;
